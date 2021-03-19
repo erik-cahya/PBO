@@ -6,32 +6,26 @@ public class app {
         Scanner scanner = new Scanner(System.in);
 
         // Array
-        String[] titleProgram =
-        {
-            "Program Kalkulator Bangun Datar & Bangun Ruang",
-            "Program Bangun Datar",
-            "Program Bangun Ruang"
-        };
+        String[] titleProgram = { "Program Kalkulator Bangun Datar & Bangun Ruang", "Program Bangun Datar",
+                "Program Bangun Ruang" };
 
+        String repeatProgram;
 
-        // Program Start
-        System.out.println("\n\n\n==============================================");
-        System.out.println(titleProgram[0]);
-        System.out.println("==============================================");
+        do {
 
-        System.out.println("Main Menu : ");
-        System.out.println("1. Bangun Datar");
-        System.out.println("2. Bangun Ruang");
-        System.out.print("Masukkan Pilihan Program : ");
-        int mainMenu = scanner.nextInt();
+            // Program Start
+            System.out.println("\n\n\n==============================================");
+            System.out.println(titleProgram[0]);
+            System.out.println("==============================================");
 
+            System.out.println("Main Menu : ");
+            System.out.println("1. Bangun Datar");
+            System.out.println("2. Bangun Ruang");
+            System.out.print("Masukkan Pilihan Program : ");
+            int mainMenu = scanner.nextInt();
 
-
-
-
-        // Switch
-        switch (mainMenu)
-        {
+            // Switch
+            switch (mainMenu) {
 
             // Program Bangun Datar
             case 1:
@@ -45,14 +39,12 @@ public class app {
                 int userInput = scanner.nextInt();
 
                 // Program Persegi
-                if( userInput == 1){
+                if (userInput == 1) {
                     System.out.println("=============================================");
 
                     // for
-                    for(int i=0; i<=4; i++)
-                    {
-                        for(int x=0; x<=6; x++)
-                        {
+                    for (int i = 0; i <= 4; i++) {
+                        for (int x = 0; x <= 6; x++) {
                             System.out.print(" *");
                         }
                         System.out.println(" *");
@@ -70,18 +62,13 @@ public class app {
 
                     System.out.println("=============================================");
                     System.out.println("Panjang Luas Persegi : " + luasPersegi + "cm2");
-                    System.out.println("Panjang Keliling Pesegi : " + kelilingPersegi + "cm" );
+                    System.out.println("Panjang Keliling Pesegi : " + kelilingPersegi + "cm");
                     System.out.println("=============================================");
                 }
                 // End Program Persegi
 
-
-
-
-            break;
+                break;
             // End Bangun Datar Program
-
-
 
             // Program Bangun Ruang
             case 2:
@@ -94,32 +81,21 @@ public class app {
                 System.out.print("Masukkan Pilihan Program : ");
                 userInput = scanner.nextInt();
 
-
-
-            break;
+                break;
             // End Bangun Ruang Program
 
-        }
+            default:
+                System.out.println("Tidak Ada Program Yang Dipilih");
+                break;
+            }
+            // end switch
 
+            System.out.print("Apakah Anda Ingin Mengulang ? : ");
+            repeatProgram = scanner.next();
 
-
-
-
+        } while ((repeatProgram.equals("y")) || (repeatProgram.equals("Yes")));
 
         // Program End
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         System.out.println();
         System.out.println();
