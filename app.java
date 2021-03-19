@@ -39,7 +39,6 @@ public class app {
                 System.out.println("==============================================");
                 System.out.print("Masukkan Pilihan Program : ");
                 int userInput = scanner.nextInt();
-
                 // ----------------------------------------------- If Else
                 // Program Persegi
                 if (userInput == 1) {
@@ -82,7 +81,6 @@ public class app {
                         System.out.println(" *");
                     }
                     // end for
-
                     System.out.println("=============================================");
                     System.out.println(titleProgram[4]);
                     System.out.println("=============================================");
@@ -154,6 +152,32 @@ public class app {
                 System.out.println("==================================================");
                 System.out.print("Masukkan Pilihan Program : ");
                 userInput = scanner.nextInt();
+
+                // Program Kubus
+                if (userInput == 1) {
+                    System.out.println("=============================================");
+                    System.out.println("Kalkulator Kubus");
+                    System.out.println("=============================================");
+                    System.out.print("Masukkan Ukuran Sisi : ");
+                    int sisi = scanner.nextInt();
+
+                    var volumeKubus = sisi * sisi * sisi;
+                    var luasPermukaan = 6 * (sisi * sisi);
+
+                    System.out.println("=============================================");
+                    System.out.println("Ukuran Volume Kubus = " + volumeKubus + " cm3");
+                    System.out.println("Ukuran Luas Permukaan Kubus = " + luasPermukaan + " cm2");
+                }
+                // End Program Kubus
+
+                // Program Balok
+                else if (userInput == 2) {
+
+                }
+                // End Program Balok
+                else {
+                    System.out.println("Program Tidak Tersedia");
+                }
 
                 break;
             // End Bangun Ruang Program
