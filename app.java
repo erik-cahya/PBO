@@ -7,101 +7,120 @@ public class app {
         Scanner scanner = new Scanner(System.in);
 
         // ---------------------------------------------------------------- Array
-        String[] titleProgram = { "Program Kalkulator Bangun Datar & Ruang", "Kalkulator Bangun Datar",
-                "Kalkulator Bangun Ruang", "Kalkulator Bangun Datar Persegi", "Kalkulator Bangun Datar Persegi Panjang",
-                "Kalkulator Bangun Datar Segitiga" };
+        String[] judulProgram =
+        {
+            "Kalkulator Bangun Datar & Ruang",
+
+            "Kalkulator Bangun Datar",
+            "Kalkulator Bangun Ruang",
+
+            "Kalkulator Bangun Datar Persegi",
+            "Kalkulator Bangun Datar Persegi Panjang",
+            "Kalkulator Bangun Datar Segitiga",
+
+            "Kalkulator Bangun Ruang Kubus",
+            "Kalkulator Bangun Ruang Balok"
+
+        };
 
         String repeatProgram;
+
         // ------------------------------------------------ Repeat Until
         do {
 
+            clrscr();
+
             // Program Start
-            System.out.println("\n\n\n==============================================");
-            System.out.println(titleProgram[0]);
-            System.out.println("==============================================");
+            System.out.println("==================================================");
+            System.out.println(judulProgram[0]);
+            System.out.println("==================================================");
 
             System.out.println("Main Menu : ");
             System.out.println("1. Bangun Datar");
             System.out.println("2. Bangun Ruang");
+            System.out.println("==================================================");
             System.out.print("Masukkan Pilihan Program : ");
             int mainMenu = scanner.nextInt();
 
             // ----------------------------------------------- Switch Case
-            switch (mainMenu) {
 
+            switch (mainMenu) {
             // Program Bangun Datar
             case 1:
-                System.out.println("==============================================");
-                System.out.println(titleProgram[1]);
+                clrscr();
+                System.out.println("==================================================");
+                System.out.println(judulProgram[1]);
+                System.out.println("==================================================");
+                System.out.println("Main Menu :");
                 System.out.println("1. Persegi");
                 System.out.println("2. Persegi Panjang");
                 System.out.println("3. Segitiga");
-                System.out.println("==============================================");
+                System.out.println("==================================================");
                 System.out.print("Masukkan Pilihan Program : ");
                 int userInput = scanner.nextInt();
                 // ----------------------------------------------- If Else
                 // Program Persegi
                 if (userInput == 1) {
-                    System.out.println("=============================================");
+                    System.out.println("==================================================");
 
                     // ----------------------------------------------- For Do
-                    for (int i = 0; i <= 4; i++) {
-                        for (int x = 0; x <= 6; x++) {
+                    for (int i = 0; i <= 5; i++) {
+                        for (int x = 0; x <= 7; x++) {
                             System.out.print(" *");
                         }
                         System.out.println(" *");
                     }
                     // end for
 
-                    System.out.println("=============================================");
-                    System.out.println(titleProgram[3]);
-                    System.out.println("=============================================");
-                    System.out.print("Masukkan Panjang Sisi : ");
+                    System.out.println("==================================================");
+                    System.out.println(judulProgram[3]);
+                    System.out.println("==================================================");
+                    System.out.print("Masukkan Panjang Sisi (cm) : ");
                     int sisi = scanner.nextInt();
 
                     var luasPersegi = sisi * sisi;
                     var kelilingPersegi = 4 * sisi;
 
-                    System.out.println("=============================================");
+                    System.out.println("==================================================");
                     System.out.println("Luas Persegi = " + luasPersegi + " cm2");
                     System.out.println("Keliling Pesegi = " + kelilingPersegi + " cm");
-                    System.out.println("=============================================");
+                    System.out.println("==================================================");
                 }
                 // End Program Persegi
 
                 // Program Persegi Panjang
                 else if (userInput == 2) {
-                    System.out.println("=============================================");
+                    System.out.println("==================================================");
 
                     // ----------------------------------------------- For Do
                     for (int i = 0; i <= 4; i++) {
-                        for (int x = 0; x <= 10; x++) {
+                        for (int x = 0; x <= 18; x++) {
                             System.out.print(" *");
                         }
                         System.out.println(" *");
                     }
                     // end for
-                    System.out.println("=============================================");
-                    System.out.println(titleProgram[4]);
-                    System.out.println("=============================================");
-                    System.out.print("Masukkan Panjang (AB) : ");
+                    System.out.println("==================================================");
+                    System.out.println(judulProgram[4]);
+                    System.out.println("==================================================");
+                    System.out.print("Masukkan Panjang (cm) : ");
                     int panjang = scanner.nextInt();
-                    System.out.print("Masukkan Lebar (BC) : ");
+                    System.out.print("Masukkan Lebar (cm) : ");
                     int lebar = scanner.nextInt();
 
                     var luasPersegiPanjang = panjang * lebar;
                     var kelilingPersegiPanjang = 2 * (panjang + lebar);
 
-                    System.out.println("=============================================");
+                    System.out.println("==================================================");
                     System.out.println("Luas Persegi Panjang = " + luasPersegiPanjang + " cm2");
                     System.out.println("Keliling Pesegi Panjang = " + kelilingPersegiPanjang + " cm");
-                    System.out.println("=============================================");
+                    System.out.println("==================================================");
                 }
                 // End Program Persegi Panjang
 
                 // Program Segitiga
                 else if (userInput == 3) {
-                    System.out.println("=============================================");
+                    System.out.println("==================================================");
 
                     // ----------------------------------------------- For Do
                     int i, x;
@@ -115,93 +134,105 @@ public class app {
                         System.out.println();
                     }
                     // end for
-                    System.out.println("=============================================");
-                    System.out.println(titleProgram[5]);
-                    System.out.println("=============================================");
-                    System.out.print("Masukkan ukuran alas : ");
+                    System.out.println("==================================================");
+                    System.out.println(judulProgram[5]);
+                    System.out.println("==================================================");
+                    System.out.print("Masukkan ukuran alas (cm): ");
                     int alas = scanner.nextInt();
 
-                    System.out.print("Masukkan Ukuran Tinggi : ");
+                    System.out.print("Masukkan Ukuran Tinggi (cm ): ");
                     int tinggi = scanner.nextInt();
 
-                    System.out.print("Masukkan Sisi Miring Segitiga : ");
+                    System.out.print("Masukkan Sisi Miring Segitiga (cm) : ");
                     int miring = scanner.nextInt();
 
                     var luasSegitiga = 0.5 * alas * tinggi;
                     var kelilingSegitiga = alas + tinggi + miring;
 
-                    System.out.println("=============================================");
+                    System.out.println("==================================================");
                     System.out.println("Luas Segitiga = " + luasSegitiga + " cm");
                     System.out.println("Keliling Segitiga = " + kelilingSegitiga + " cm");
-                    System.out.println("=============================================");
+                    System.out.println("==================================================");
                 }
                 // End Program Segitiga
                 else {
+                    System.out.println("==================================================");
                     System.out.println("Maaf Program Tidak Tersedia");
+                    System.out.println("==================================================");
                 }
                 break;
             // End Bangun Datar Program
 
             // Program Bangun Ruang
             case 2:
+                clrscr();
                 System.out.println("==================================================");
-                System.out.println(titleProgram[2]);
+                System.out.println(judulProgram[2]);
+                System.out.println("==================================================");
+                System.out.println("Main Menu :");
                 System.out.println("1. Kubus");
                 System.out.println("2. Balok");
-                System.out.println("3. Lingkaran");
                 System.out.println("==================================================");
                 System.out.print("Masukkan Pilihan Program : ");
                 userInput = scanner.nextInt();
 
                 // Program Kubus
                 if (userInput == 1) {
-                    System.out.println("=============================================");
-                    System.out.println("Kalkulator Bangun Ruang Kubus");
-                    System.out.println("=============================================");
-                    System.out.print("Masukkan Ukuran Sisi : ");
+                    System.out.println("==================================================");
+                    System.out.println(judulProgram[6]);
+                    System.out.println("==================================================");
+                    System.out.print("Masukkan Ukuran Sisi (cm) : ");
                     int sisi = scanner.nextInt();
 
                     var volumeKubus = sisi * sisi * sisi;
                     var luasPermukaan = 6 * (sisi * sisi);
 
-                    System.out.println("=============================================");
+                    System.out.println("==================================================");
                     System.out.println("Ukuran Volume Kubus = " + volumeKubus + " cm3");
                     System.out.println("Ukuran Luas Permukaan Kubus = " + luasPermukaan + " cm2");
+                    System.out.println("==================================================");
                 }
                 // End Program Kubus
 
                 // Program Balok
                 else if (userInput == 2) {
-                    System.out.println("=============================================");
-                    System.out.println("Kalkulator Bangun Ruang Balok");
-                    System.out.println("=============================================");
+                    System.out.println("==================================================");
+                    System.out.println(judulProgram[7]);
+                    System.out.println("==================================================");
 
-                    System.out.print("Masukkan Ukuran Panjang Balok : ");
+                    System.out.print("Masukkan Ukuran Panjang Balok (cm) : ");
                     int panjang = scanner.nextInt();
 
-                    System.out.print("Masukkan Ukuran Lebar Balok : ");
+                    System.out.print("Masukkan Ukuran Lebar Balok (cm) : ");
                     int lebar = scanner.nextInt();
 
-                    System.out.print("Masukkan Ukuran Tinggi Balok : ");
+                    System.out.print("Masukkan Ukuran Tinggi Balok (cm) : ");
                     int tinggi = scanner.nextInt();
 
-                    var luasPermukaanBalok = 2 * (panjang + lebar + panjang + tinggi + lebar + tinggi);
+                    var luasPermukaanBalok = 2 * ((panjang * lebar) + (panjang * tinggi) + (lebar * tinggi));
                     var volumeBalok = panjang * lebar * tinggi;
 
-                    System.out.println("=============================================");
+                    System.out.println("==================================================");
                     System.out.println("Ukuran Volume Balok = " + volumeBalok + " cm3");
                     System.out.println("Ukuran Luas Permukaan Balok = " + luasPermukaanBalok + " cm2");
+                    System.out.println("==================================================");
                 }
                 // End Program Balok
                 else {
+                    System.out.println("==================================================");
                     System.out.println("Program Tidak Tersedia");
+                    System.out.println("==================================================");
                 }
 
                 break;
             // End Bangun Ruang Program
 
+
             default:
+                System.out.println("==================================================");
                 System.out.println("Program Tidak Tersedia");
+                System.out.println("==================================================");
+
                 break;
             }
             // end switch
@@ -210,5 +241,17 @@ public class app {
             repeatProgram = scanner.next();
 
         } while ((repeatProgram.equals("y")) || (repeatProgram.equals("Yes")));
+    }
+
+
+
+    public static void clrscr(){
+        try
+        {
+            new ProcessBuilder("cmd","/c", "cls").inheritIO().start().waitFor();
+        }catch(Exception E)
+        {
+            System.out.println(E);
+        }
     }
 }
