@@ -156,7 +156,7 @@ public class app {
                 // Program Kubus
                 if (userInput == 1) {
                     System.out.println("=============================================");
-                    System.out.println("Kalkulator Kubus");
+                    System.out.println("Kalkulator Bangun Ruang Kubus");
                     System.out.println("=============================================");
                     System.out.print("Masukkan Ukuran Sisi : ");
                     int sisi = scanner.nextInt();
@@ -172,7 +172,25 @@ public class app {
 
                 // Program Balok
                 else if (userInput == 2) {
+                    System.out.println("=============================================");
+                    System.out.println("Kalkulator Bangun Ruang Balok");
+                    System.out.println("=============================================");
 
+                    System.out.print("Masukkan Ukuran Panjang Balok : ");
+                    int panjang = scanner.nextInt();
+
+                    System.out.print("Masukkan Ukuran Lebar Balok : ");
+                    int lebar = scanner.nextInt();
+
+                    System.out.print("Masukkan Ukuran Tinggi Balok : ");
+                    int tinggi = scanner.nextInt();
+
+                    var luasPermukaanBalok = 2 * (panjang + lebar + panjang + tinggi + lebar + tinggi);
+                    var volumeBalok = panjang * lebar * tinggi;
+
+                    System.out.println("=============================================");
+                    System.out.println("Ukuran Volume Balok = " + volumeBalok + " cm3");
+                    System.out.println("Ukuran Luas Permukaan Balok = " + luasPermukaanBalok + " cm2");
                 }
                 // End Program Balok
                 else {
