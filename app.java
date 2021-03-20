@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class app {
     public static void main(String[] args) {
 
-        // ----------------------------------------------- Scanner
+        // ---------------------------------------------------------------- Scanner
         Scanner scanner = new Scanner(System.in);
 
         // ---------------------------------------------------------------- Array
@@ -20,12 +20,11 @@ public class app {
 
             "Kalkulator Bangun Ruang Kubus",
             "Kalkulator Bangun Ruang Balok"
-
         };
 
         String repeatProgram;
 
-        // ------------------------------------------------ Repeat Until
+        // ---------------------------------------------------------------- Repeat Until
         do {
 
             clrscr();
@@ -42,8 +41,7 @@ public class app {
             System.out.print("Masukkan Pilihan Program : ");
             int mainMenu = scanner.nextInt();
 
-            // ----------------------------------------------- Switch Case
-
+            // ---------------------------------------------------------------- Switch Case
             switch (mainMenu) {
             // Program Bangun Datar
             case 1:
@@ -58,12 +56,12 @@ public class app {
                 System.out.println("==================================================");
                 System.out.print("Masukkan Pilihan Program : ");
                 int userInput = scanner.nextInt();
-                // ----------------------------------------------- If Else
+                // ---------------------------------------------------------------- If Else
                 // Program Persegi
                 if (userInput == 1) {
                     System.out.println("==================================================");
 
-                    // ----------------------------------------------- For Do
+                    // ---------------------------------------------------------------- For Do
                     for (int i = 0; i <= 5; i++) {
                         for (int x = 0; x <= 7; x++) {
                             System.out.print(" *");
@@ -92,7 +90,7 @@ public class app {
                 else if (userInput == 2) {
                     System.out.println("==================================================");
 
-                    // ----------------------------------------------- For Do
+                    // ---------------------------------------------------------------- For Do
                     for (int i = 0; i <= 4; i++) {
                         for (int x = 0; x <= 18; x++) {
                             System.out.print(" *");
@@ -122,7 +120,7 @@ public class app {
                 else if (userInput == 3) {
                     System.out.println("==================================================");
 
-                    // ----------------------------------------------- For Do
+                    // ---------------------------------------------------------------- For Do
                     int i, x;
                     for (i = 0; i < 6; i++) {
                         for (x = 2 * (6 - i); x >= 0; x--) {
