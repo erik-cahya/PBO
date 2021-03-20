@@ -78,8 +78,8 @@ public class app {
                     System.out.print("Masukkan Panjang Sisi (cm) : ");
                     int sisi = scanner.nextInt();
 
-                    var luasPersegi = sisi * sisi;
-                    var kelilingPersegi = 4 * sisi;
+                    double luasPersegi = sisi * sisi;
+                    double kelilingPersegi = 4 * sisi;
 
                     System.out.println("==================================================");
                     System.out.println("Luas Persegi = " + luasPersegi + " cm2");
@@ -108,8 +108,8 @@ public class app {
                     System.out.print("Masukkan Lebar (cm) : ");
                     int lebar = scanner.nextInt();
 
-                    var luasPersegiPanjang = panjang * lebar;
-                    var kelilingPersegiPanjang = 2 * (panjang + lebar);
+                    double luasPersegiPanjang = panjang * lebar;
+                    double kelilingPersegiPanjang = 2 * (panjang + lebar);
 
                     System.out.println("==================================================");
                     System.out.println("Luas Persegi Panjang = " + luasPersegiPanjang + " cm2");
@@ -146,8 +146,8 @@ public class app {
                     System.out.print("Masukkan Sisi Miring Segitiga (cm) : ");
                     int miring = scanner.nextInt();
 
-                    var luasSegitiga = 0.5 * alas * tinggi;
-                    var kelilingSegitiga = alas + tinggi + miring;
+                    double luasSegitiga = 0.5 * alas * tinggi;
+                    double kelilingSegitiga = alas + tinggi + miring;
 
                     System.out.println("==================================================");
                     System.out.println("Luas Segitiga = " + luasSegitiga + " cm");
@@ -184,8 +184,8 @@ public class app {
                     System.out.print("Masukkan Ukuran Sisi (cm) : ");
                     int sisi = scanner.nextInt();
 
-                    var volumeKubus = sisi * sisi * sisi;
-                    var luasPermukaan = 6 * (sisi * sisi);
+                    double volumeKubus = sisi * sisi * sisi;
+                    double luasPermukaan = 6 * (sisi * sisi);
 
                     System.out.println("==================================================");
                     System.out.println("Ukuran Volume Kubus = " + volumeKubus + " cm3");
@@ -209,8 +209,8 @@ public class app {
                     System.out.print("Masukkan Ukuran Tinggi Balok (cm) : ");
                     int tinggi = scanner.nextInt();
 
-                    var luasPermukaanBalok = 2 * ((panjang * lebar) + (panjang * tinggi) + (lebar * tinggi));
-                    var volumeBalok = panjang * lebar * tinggi;
+                    double luasPermukaanBalok = 2 * ((panjang * lebar) + (panjang * tinggi) + (lebar * tinggi));
+                    double volumeBalok = panjang * lebar * tinggi;
 
                     System.out.println("==================================================");
                     System.out.println("Ukuran Volume Balok = " + volumeBalok + " cm3");
