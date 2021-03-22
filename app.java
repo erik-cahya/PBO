@@ -7,8 +7,7 @@ public class app {
         Scanner scanner = new Scanner(System.in);
 
         // ---------------------------------------------------------------- Array
-        String[] judulProgram =
-        {
+        String[] judulProgram = {
             "Kalkulator Bangun Datar & Ruang",
 
             "Kalkulator Bangun Datar",
@@ -19,8 +18,7 @@ public class app {
             "Kalkulator Bangun Datar Segitiga",
 
             "Kalkulator Bangun Ruang Kubus",
-            "Kalkulator Bangun Ruang Balok"
-        };
+            "Kalkulator Bangun Ruang Balok" };
 
         String repeatProgram;
 
@@ -225,7 +223,6 @@ public class app {
                 break;
             // End Bangun Ruang Program
 
-
             default:
                 System.out.println("==================================================");
                 System.out.println("Program Tidak Tersedia");
@@ -241,14 +238,10 @@ public class app {
         } while ((repeatProgram.equals("y")) || (repeatProgram.equals("Yes")));
     }
 
-
-
-    public static void clrscr(){
-        try
-        {
-            new ProcessBuilder("cmd","/c", "cls").inheritIO().start().waitFor();
-        }catch(Exception E)
-        {
+    public static void clrscr() {
+        try {
+            new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+        } catch (Exception E) {
             System.out.println(E);
         }
     }
